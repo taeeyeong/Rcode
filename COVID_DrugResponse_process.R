@@ -272,7 +272,7 @@ for (id in unique(dataset$질본.번호)){
 }
 dim(dataset2) #6188 8
 length(unique(dataset2$질본.번호)) #1858
-dataset3 <- dataset2[-which(dataset2$질본.번호=="현위출" & dataset2$CSS4stage==4),]
+dataset3 <- dataset2[-which(dataset2$질본.번호=="hhh" & dataset2$CSS4stage==4),]
 dim(dataset3) #6187 8
 
 write.csv(dataset3, "dataset_GEE_reduced_V3.1.csv", row.names = F)
